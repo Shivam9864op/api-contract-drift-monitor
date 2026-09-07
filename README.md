@@ -14,11 +14,13 @@ An API can be “green” in unit tests while quietly breaking consumers by remo
 
 ```bash
 npm test
+npm run check:safe
+npm run check:breaking
 node src/cli.mjs fixtures/baseline.json fixtures/current-safe.json
 node src/cli.mjs fixtures/baseline.json fixtures/current-breaking.json
 ```
 
-The breaking fixture intentionally exits with code `1` and reports the exact change codes. The safe fixture exits with `0`.
+`check:safe` exits with `0`. `check:breaking` intentionally exits with `1` and reports the exact change codes; that non-zero exit is what a CI gate should use when a real breaking diff is found.
 
 ## Example output
 

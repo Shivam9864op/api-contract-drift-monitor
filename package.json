@@ -6,7 +6,9 @@
   "description": "A small, deterministic OpenAPI diff tool that flags breaking API contract changes.",
   "scripts": {
     "test": "node --test test/diff.test.mjs",
-    "check": "node src/cli.mjs fixtures/baseline.json fixtures/current-breaking.json"
+    "check": "node src/cli.mjs fixtures/baseline.json fixtures/current-breaking.json",
+    "check:safe": "node src/cli.mjs fixtures/baseline.json fixtures/current-safe.json",
+    "check:breaking": "node src/cli.mjs fixtures/baseline.json fixtures/current-breaking.json"
   },
   "license": "MIT"
 }
