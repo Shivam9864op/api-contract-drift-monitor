@@ -1,0 +1,14 @@
+{
+  "breaking": 0,
+  "nonBreaking": 1,
+  "total": 1,
+  "status": "safe",
+  "changes": [
+    {
+      "severity": "non_breaking",
+      "code": "operation_added",
+      "target": "POST /tickets",
+      "message": "POST /tickets was added"
+    }
+  ]
+}

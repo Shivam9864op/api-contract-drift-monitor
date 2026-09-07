@@ -36,6 +36,11 @@ The breaking fixture intentionally exits with code `1` and reports the exact cha
 }
 ```
 
+Saved reports are also available in [`examples/`](examples/):
+
+- [`safe-report.json`](examples/safe-report.json) — additive change, exit code `0`.
+- [`breaking-report.json`](examples/breaking-report.json) — three breaking changes, exit code `1`.
+
 ## Design choices
 
 - No network calls or credentials: fixtures are local and synthetic.

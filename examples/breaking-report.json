@@ -1,0 +1,26 @@
+{
+  "breaking": 3,
+  "nonBreaking": 0,
+  "total": 3,
+  "status": "blocked",
+  "changes": [
+    {
+      "severity": "breaking",
+      "code": "operation_removed",
+      "target": "GET /tickets/{id}",
+      "message": "GET /tickets/{id} was removed"
+    },
+    {
+      "severity": "breaking",
+      "code": "response_type_changed",
+      "target": "GET /tickets",
+      "message": "Success response type changed from array to object"
+    },
+    {
+      "severity": "breaking",
+      "code": "required_parameter_added",
+      "target": "GET /tickets query:team",
+      "message": "Required parameter query:team was added"
+    }
+  ]
+}
