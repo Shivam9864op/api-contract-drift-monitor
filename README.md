@@ -6,6 +6,8 @@ Small, deterministic OpenAPI diff tool for catching breaking API changes before 
 
 This is a personal open-source demo using synthetic fixtures. It is not client work and it does not replace a full contract-testing platform.
 
+Current public release: [v1.0.0](https://github.com/Shivam9864op/api-contract-drift-monitor/tree/v1.0.0).
+
 ## Why it exists
 
 An API can be “green” in unit tests while quietly breaking consumers by removing an endpoint, deleting a response, changing a response type, or adding a required parameter. This tool turns those changes into a readable report and a non-zero exit code that can block CI.
