@@ -2,6 +2,8 @@
 
 Small, deterministic OpenAPI diff tool for catching breaking API changes before they reach a deployment.
 
+![Tests](https://github.com/Shivam9864op/api-contract-drift-monitor/actions/workflows/test.yml/badge.svg)
+
 This is a personal open-source demo using synthetic fixtures. It is not client work and it does not replace a full contract-testing platform.
 
 ## Why it exists
