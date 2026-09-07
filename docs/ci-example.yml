@@ -1,0 +1,16 @@
+# Copy this into a consuming repository's .github/workflows/contract-check.yml.
+name: API contract check
+
+on:
+  pull_request:
+
+jobs:
+  contract-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci
+      - run: node src/cli.mjs fixtures/baseline.json fixtures/current-safe.json

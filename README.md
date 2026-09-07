@@ -46,3 +46,5 @@ The breaking fixture intentionally exits with code `1` and reports the exact cha
 ## Next extensions
 
 Schema property-level diffs, an allow-list for intentional changes, GitHub Actions annotations, and a Pact/contract-test adapter would be natural next steps.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md), and [docs/ci-example.yml](docs/ci-example.yml) for safe extension and CI guidance.
