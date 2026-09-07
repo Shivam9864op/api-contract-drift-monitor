@@ -53,3 +53,5 @@ Saved reports are also available in [`examples/`](examples/):
 Schema property-level diffs, an allow-list for intentional changes, GitHub Actions annotations, and a Pact/contract-test adapter would be natural next steps.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md), and [docs/ci-example.yml](docs/ci-example.yml) for safe extension and CI guidance.
+
+For a short explanation to use in a technical conversation, see [docs/interview-notes.md](docs/interview-notes.md).
