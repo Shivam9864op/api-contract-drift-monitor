@@ -1,0 +1,11 @@
+{
+  "openapi": "3.0.0",
+  "paths": {
+    "/tickets": {
+      "get": {
+        "parameters": [{ "in": "query", "name": "team", "required": true }],
+        "responses": { "200": { "content": { "application/json": { "schema": { "type": "object" } } } } }
+      }
+    }
+  }
+}

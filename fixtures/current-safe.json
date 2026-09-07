@@ -1,0 +1,17 @@
+{
+  "openapi": "3.0.0",
+  "paths": {
+    "/tickets": {
+      "get": {
+        "responses": { "200": { "content": { "application/json": { "schema": { "type": "array" } } } } }
+      },
+      "post": { "responses": { "201": {} } }
+    },
+    "/tickets/{id}": {
+      "get": {
+        "parameters": [{ "in": "path", "name": "id", "required": true }],
+        "responses": { "200": { "content": { "application/json": { "schema": { "type": "object" } } } } }
+      }
+    }
+  }
+}
